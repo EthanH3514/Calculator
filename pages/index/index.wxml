@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="main">
+        <view class="input-history">
+            {{ inputHistoryStr }}
+        </view>
+
+        <view class="current">
+            {{ current }}
+        </view>
+
+        <view class="button-board">
+            <view class="button-row">
+                <view class="button-cell button-cell-fnc" data-button-type="function" bindtap="ClearError">CE</view>
+                <view class="button-cell button-cell-fnc" data-button-type="function" bindtap="clear">C</view>
+                <view class="button-cell button-cell-fnc" data-button-type="function" bindtap="backspace">←</view>
+                <view class="button-cell button-cell-fnc" data-button-type="function" bindtap="divide">/</view>
+            </view>
+
+            <view class="button-row">
+                <view class="button-cell button-cell-num" data-button-type="number" bindtap="input7">7</view>
+                <view class="button-cell button-cell-num" data-button-type="number" bindtap="input8">8</view>
+                <view class="button-cell button-cell-num" data-button-type="number" bindtap="input9">9</view>
+                <view class="button-cell button-cell-fnc" data-button-type="function" bindtap="multiply">×</view>
+            </view>
+
+            <view class="button-row">
+                <view class="button-cell button-cell-num" data-button-type="number" bindtap="input4">4</view>
+                <view class="button-cell button-cell-num" data-button-type="number" bindtap="input5">5</view>
+                <view class="button-cell button-cell-num" data-button-type="number" bindtap="input6">6</view>
+                <view class="button-cell button-cell-fnc" data-button-type="function" bindtap="minus">-</view>
+            </view>
+
+            <view class="button-row">
+                <view class="button-cell button-cell-num" data-button-type="number" bindtap="input1">1</view>
+                <view class="button-cell button-cell-num" data-button-type="number" bindtap="input2">2</view>
+                <view class="button-cell button-cell-num" data-button-type="number" bindtap="input3">3</view>
+                <view class="button-cell button-cell-fnc" data-button-type="function" bindtap="add">+</view>
+            </view>
+
+            <view class="button-row">
+                <view class="button-cell button-cell-fnc" data-button-type="function" bindtap="negate">+/-</view>
+                <view class="button-cell button-cell-num" data-button-type="number" bindtap="input0">0</view>
+                <view class="button-cell button-cell-fnc" data-button-type="function" bindtap="dot">.</view>
+                <view class="button-cell button-cell-fnc" data-button-type="function" bindtap="equal">=</view>
+            </view>
+        </view>
+    </view>
+</view>
